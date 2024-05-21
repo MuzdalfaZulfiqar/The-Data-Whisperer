@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Panel</title>
+
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('view-current-plan').addEventListener('click', function() {
+            window.location.href = 'page14.html';
+        });
+      
+        document.getElementById('buy-subscription').addEventListener('click', function() {
+            window.location.href = 'page15.html';
+        });
+      
+        document.getElementById('upgrade-subscription').addEventListener('click', function() {
+            window.location.href = 'page16.html';
+        });
+
+        document.getElementById('downgrade-subscription').addEventListener('click', function() {
+            window.location.href = 'page17.html';
+        });
+      
+        document.getElementById('cancel-subscription').addEventListener('click', function() {
+            window.location.href = 'page18.html';
+        });
+        document.getElementById('go-to-menu').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+      });
+      </script>    
+</head>
+<body>
+    <style>
+        .subscriber-panel {
+            border-radius: 2px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: #daf0cc;
+            display: flex;
+            max-width: 424px;
+            flex-direction: column;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            line-height: 100%;
+            padding: 21px 67px 7px;
+        }
+        .panel-title {
+            color: #171a1f;
+            align-self: center;
+            font: 700 24px/171% Epilogue, sans-serif;
+        }
+        .plan-view,
+        .subscription-buy,
+        .subscription-upgrade,
+        .subscription-downgrade,
+        .subscription-cancel {
+            border-radius: 8px;
+            box-shadow: 0px 0px 2px 0px rgba(23, 26, 31, 0.12), 0px 0px 1px 0px rgba(23, 26, 31, 0.07);
+            background-color: #284088;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4px;
+            padding: 20px 67px 8px;
+        }
+        .call-to-action {
+            font-family: Inter, sans-serif;
+            margin-top: 11px;
+        }
+        .plan-view {
+            margin-top: 27px;
+            padding: 20px 61px 12px;
+        }
+        .subscription-upgrade-image {
+            aspect-ratio: 1.03;
+            object-fit: auto;
+            object-position: center;
+            width: 39px;
+            border-radius: 19px;
+            align-self: center;
+        }
+        .subscription-image,
+        .subscription-downgrade-image {
+            aspect-ratio: 1;
+            object-fit: auto;
+            object-position: center;
+            width: 41px;
+            border-radius: 19px;
+            align-self: center;
+        }
+        .go-back {
+            color: #197dca;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            align-self: center;
+            margin-top: 33px;
+            font: 12px/167% Inter, sans-serif;
+        }
+    </style>
+    <section class="subscriber-panel" >
+        <h2 class="panel-title">Subscriber Panel</h2>
+        <article class="plan-view" id = "view-current-plan">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2adfeedaa4bc296493ff100b6ccb7b06112fd031b622d757c7724116ae545300?apiKey=7140b2a48e3c426db445770d612727cc&" alt="View Current Plan" class="subscription-image" />
+            <p class="call-to-action">View Current Plan</p>
+        </article>
+        <article class="subscription-buy" id="buy-subscription">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/12842446c2af04d57caac687437393c9fbf50e80da10b392087a1555316e22b2?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Buy Subscription" class="subscription-image" />
+            <p class="call-to-action">Buy Subscription</p>
+        </article>
+        <article class="subscription-upgrade" id="upgrade-subscription">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/39b32cc27e0fbe46da2eb90326d93fe98f6679452bcf182fa8ff4259c470ea0e?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Upgrade Subscription" class="subscription-upgrade-image" />
+            <p class="call-to-action">Upgrade Subscription</p>
+        </article>
+        <article class="subscription-downgrade" id="downgrade-subscription">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/85625a421746c44b72976ff8eb2dce5d48106dd2a3e7ba1ab388ee05bbe8ed7f?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Downgrade Subscription" class="subscription-downgrade-image" />
+            <p class="call-to-action">Downgrade Subscription</p>
+        </article>
+        <article class="subscription-cancel" id="cancel-subscription">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4afd587e4eb5501f60a53e6cf30e2498ab2bafaa378a67db310adef2423dd800?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Cancel Subscription" class="subscription-image" />
+            <p class="call-to-action">Cancel Subscription</p>
+        </article>
+        <p class="go-back" id="go-to-menu">Go Back to main menu -&gt;</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panels</title>
+<script>document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('userPanelButton').addEventListener('click', function() {
+      window.location.href = 'page3.html';
+  });
+
+  document.getElementById('subscriberPanelButton').addEventListener('click', function() {
+      window.location.href = 'page13.html';
+  });
+
+  document.getElementById('adminPanelButton').addEventListener('click', function() {
+      window.location.href = 'page11.html';
+  });
+});
+</script>
+    <style>
+      .div {
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #daf0cc;
+    display: flex;
+    max-width: 424px;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 58px 65px 21px;
+}
+.div-2 {
+    align-self: center;
+    display: flex;
+    gap: 20px;
+}
+.div-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-4 {
+    color: #171a1f;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+    font: 700 24px/171% Epilogue, sans-serif;
+}
+.panel-button {
+    border: none;
+    background: none;
+    padding: 0;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.panel-button:focus {
+    outline: none;
+}
+.div-5, .div-7, .div-9 {
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 0px rgba(23, 26, 31, 0.12), 0px 0px 1px 0px rgba(23, 26, 31, 0.07);
+    background-color: #284088;
+    display: flex;
+    width: 244px; /* Set a fixed width */
+    flex-direction: column;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    line-height: 100%;
+    cursor: pointer; /* Add cursor pointer to indicate a button */
+}
+.div-5 {
+    margin-top: 49px;
+    padding: 33px 49px;
+}
+.img-3, .img-4, .img-5 {
+    aspect-ratio: 1.03;
+    object-fit: auto;
+    object-position: center;
+    width: 40px;
+    align-self: center;
+}
+.div-6, .div-8, .div-10 {
+    font-family: Inter, sans-serif;
+    margin-top: 4px;
+}
+.div-7 {
+    margin-top: 29px;
+    padding: 31px 23px;
+}
+.div-9 {
+    margin-top: 38px;
+    padding: 32px 41px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+            
+            <div class="div-4">The Data Whisperer</div>
+        </div>
+        <button id="userPanelButton" class="panel-button">
+            <div class="div-5">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/849578916ec4ef92759f90c33868e01f04f3c0fcfbc8c04472f3d8d9b3375672?"
+                    class="img-3"
+                />
+                <div class="div-6">User Panel</div>
+            </div>
+        </button>
+
+        <button id="subscriberPanelButton" class="panel-button">
+            <div class="div-7">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/14b22d6d334b2ef2a1dd6e01bc56227da6a9ebc6e65eeed3342f750192e24d38?"
+                    class="img-4"
+                />
+                <div class="div-8">Subscriber Panel</div>
+            </div>
+        </button>
+
+        <button id="adminPanelButton" class="panel-button">
+            <div class="div-9">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d45229dd567d4f9b24dfd02479b1c34c5a37c0da1d39d585b3752afd4a69083c?"
+                    class="img-5"
+                />
+                <div class="div-10">Admin Panel</div>
+            </div>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

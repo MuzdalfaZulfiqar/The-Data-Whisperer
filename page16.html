@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Upgraded</title>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('go-to-menu').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+      });
+      </script>
+
+</head>
+<body>
+    <style>
+        .confirmation-container {
+          border-radius: 2px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: #daf0cc;
+          display: flex;
+          max-width: 425px;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 40px 0;
+        }
+      
+        .confirmation-content {
+          align-items: center;
+          border-radius: 300px;
+          background-color: #daf0cc;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          padding: 80px 19px 38px;
+        }
+      
+        .confirmation-image {
+          aspect-ratio: 0.9;
+          object-fit: auto;
+          object-position: center;
+          width: 221px;
+          fill: #028f31;
+          margin-top: 10px;
+          max-width: 100%;
+        }
+      
+        .confirmation-message {
+          color: #028f31;
+          align-self: stretch;
+          margin-top: 89px;
+          font: 700 32px/41px Epilogue, sans-serif;
+        }
+      
+        .navigation-link {
+          color: #197dca;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 70px;
+          font: 400 12px/1.67 Inter, sans-serif;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      
+        .navigation-link:focus {
+          outline: 2px solid #197dca;
+          outline-offset: 4px;
+        }
+      </style>
+      
+      <section class="confirmation-container" aria-live="polite">
+        <div class="confirmation-content">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/42ae4c4368bdb1a68136b5940afbb4dfb975cf304a17a005af628c577d9586f2?apiKey=7140b2a48e3c426db445770d612727cc&"
+            class="confirmation-image"
+            alt=""
+          />
+          <p class="confirmation-message">Subscription Upgraded Successfully</p>
+          <a href="#" class="navigation-link" tabindex="0" id ="go-to-menu">Go Back to main menu &rarr;</a>
+        </div>
+      </section>
+</body>
+</html>

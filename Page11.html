@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        .admin-panel-container {
+            box-shadow: 0 0 2px rgba(23, 26, 31, 0.12), 0 0 1px rgba(23, 26, 31, 0.07);
+            background-color: #daf0cc;
+            display: flex;
+            max-width: 425px;
+            flex-direction: column;
+            align-items: start;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 167%;
+            padding: 35px 66px;
+        }
+        .admin-panel-title {
+            display: flex;
+            margin-left: 20px;
+            gap: 9px;
+            font-size: 30px;
+            color: #171a1f;
+            font-weight: 700;
+            line-height: 93%;
+            margin-top: 10px;
+        }
+        .admin-panel-title-text {
+            font-family: Inter, sans-serif;
+            align-self: start;
+            flex-grow: 1;
+        }
+        .section {
+            border-radius: 8px;
+            box-shadow: 0 0 2px rgba(23, 26, 31, 0.12), 0 0 1px rgba(23, 26, 31, 0.07);
+            background-color: #284088;
+            display: flex;
+            align-items: center;
+            font-family: Inter, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            padding: 18px;
+        }
+        .section:nth-of-type(1) {
+            margin-top: 24px;
+        }
+        .section-icon {
+            aspect-ratio: 1.03;
+            object-fit: cover;
+            object-position: center;
+            width: 40px;
+            border-radius: 20px;
+            margin-right: 13px;
+        }
+        .section-text {
+            flex-grow: 1;
+        }
+        .main-menu-link {
+            color: #197dca;
+            text-align: center;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Inter, sans-serif;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #197dca;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #155a99;
+        }
+    </style>
+</head>
+<body>
+    <section class="admin-panel-container">
+        <header class="admin-panel-title">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/003bdea685ee02e66c07139f46102959a3f7cc9c2ac2b4c9e9f57bc6015c4e8a?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Admin Panel Icon" class="section-icon">
+            <h1 class="admin-panel-title-text">Admin Panel</h1>
+        </header>
+        <section class="section">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/28e8f4abc8c499f90da8f6f8e40e425f462dd0e6645992cf19d0c468d430834e?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Manage User Accounts" class="section-icon">
+            <p class="section-text">Manage User Accounts</p>
+        </section>
+        <section class="section">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d78912414cc0ccdd7505e72fd11751a5eb7ded80e7c0292131160a525370166?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Manage System Settings" class="section-icon">
+            <p class="section-text">Manage System Settings</p>
+        </section>
+        <section class="section">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3853960f648f48d0be72242c20a4e7d00c92a0a8f97ca92d312ea2f48ee6fd1?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Generate Reports" class="section-icon">
+            <p class="section-text">Generate Reports</p>
+        </section>
+        <section class="section">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aae30aa82cf7a403cac47fee5ee9a436d05aa9bd9c07e7dcfbd1c4e27ed842a7?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Support Requests" class="section-icon">
+            <p class="section-text">Support Requests</p>
+        </section>
+        <section class="section">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/26c58a21e21b2f16973f5653863b49c43e647ac6c78b5f12e381b8b68c9ea4b5?apiKey=7140b2a48e3c426db445770d612727cc&" alt="Back-up/Recovery" class="section-icon">
+            <p class="section-text">Back-up/Recovery</p>
+        </section>
+        <a href="page2.html" class="main-menu-link button" tabindex="0">Go Back to main menu -&gt;</a>
+    </section>
+</body>
+</html>

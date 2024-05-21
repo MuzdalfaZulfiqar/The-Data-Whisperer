@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Downgraded</title>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('go-to-menu').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+      });
+      </script>
+</head>
+<body>
+    <style>
+        .container {
+          border-radius: 2px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: #daf0cc;
+          display: flex;
+          max-width: 425px;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+        }
+      
+        .content {
+          border-radius: 300px;
+          background-color: #daf0cc;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding: 80px 15px 22px;
+        }
+      
+        .image {
+          aspect-ratio: 0.9;
+          object-fit: auto;
+          object-position: center;
+          width: 221px;
+          fill: #fa9699;
+          margin-top: 15px;
+          max-width: 100%;
+        }
+      
+        .message {
+          color: #284088;
+          align-self: stretch;
+          margin-top: 98px;
+          font: 700 30px/41px Epilogue, sans-serif;
+        }
+      
+        .back-link {
+          color: #197dca;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 74px;
+          font: 400 12px/167% Inter, sans-serif;
+        }
+      </style>
+      
+      <section class="container">
+        <div class="content">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ea423349661061340e8571d873172a0aa91fbc5e1f5ed376183a2d9ab10d20f?apiKey=7140b2a48e3c426db445770d612727cc&" class="image" alt="" />
+          <div class="message">Subscription downgraded Successfully</div>
+          <a href="#" class="back-link" tabindex="0" id="go-to-menu">Go Back to main menu -&gt;</a>
+        </div>
+      </section>
+</body>
+</html>

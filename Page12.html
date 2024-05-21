@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <style>
+        .login-container {
+          border-radius: 8px;
+          box-shadow: 0px 0px 2px 0px rgba(23, 26, 31, 0.12), 0px 17px 35px 0px rgba(23, 26, 31, 0.24);
+          background-color: #daf0cc;
+          display: flex;
+          max-width: 425px;
+          flex-direction: column;
+          align-items: center;
+          padding: 36px 20px 19px;
+        }
+        .form-wrapper {
+          width: 100%;
+        }
+        .form-header {
+          color: #171a1f;
+          font: 700 32px Epilogue, sans-serif;
+          margin-left: 43px;
+        }
+        .form-subheader {
+          color: #9095a1;
+          margin-top: 13px;
+          font: 400 20px Epilogue, sans-serif;
+        }
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          margin-top: 37px;
+          font-size: 16px;
+          line-height: 162.5%;
+          padding: 7px 0 1px;
+        }
+        .group-label {
+          color: #323743;
+          font-family: Inter, sans-serif;
+          font-weight: 700;
+        }
+        .input-wrapper {
+          border-radius: 4px;
+          background-color: #f3f4f6;
+          display: flex;
+          margin-top: 8px;
+          gap: 8px;
+          color: #bdc1ca;
+          font-weight: 400;
+          padding: 12px 16px;
+        }
+        .input-icon {
+          aspect-ratio: 1;
+          object-fit: auto;
+          object-position: center;
+          width: 20px;
+        }
+        .input-placeholder {
+          font-family: Inter, sans-serif;
+          flex-grow: 1;
+          margin: auto 0;
+        }
+        .forgot-password {
+          color: #ca5520;
+          text-align: right;
+          align-self: end;
+          margin-top: 8px;
+          font: 400 14px/157% Inter, sans-serif;
+        }
+        .sign-in-btn {
+          border-radius: 4px;
+          background-color: #284088;
+          margin-top: 31px;
+          width: 100%;
+          max-width: 385px;
+          color: #fff;
+          padding: 15px 60px;
+          font: 400 16px/162.5% Inter, sans-serif;
+          text-align: center;
+        }
+        .or-continue-text {
+          color: #6f7787;
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 45px;
+          font: 700 12px/167% Inter, sans-serif;
+        }
+        .social-icons {
+          display: flex;
+          margin-top: 11px;
+          gap: 9px;
+        }
+        .social-icon {
+          aspect-ratio: 1;
+          object-fit: auto;
+          object-position: center;
+          width: 32px;
+        }
+        .sign-up-container {
+          display: flex;
+          margin-top: 109px;
+          gap: 4px;
+          font-size: 14px;
+          line-height: 157%;
+        }
+        .sign-up-text {
+          color: #171a1f;
+          text-align: right;
+          font-family: Inter, sans-serif;
+          font-weight: 400;
+          flex-grow: 1;
+        }
+        .sign-up-link {
+          color: #1c2c5f;
+          font-family: Inter, sans-serif;
+          font-weight: 700;
+        }
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+        </style>
+        <div class="login-container">
+          <div class="form-wrapper">
+            <h2 class="form-header">Admin Login</h2>
+            <p class="form-subheader">Welcome back</p>
+            <form>
+              <div class="form-group">
+                <label for="emailInput" class="group-label">Email</label>
+                <div class="input-wrapper">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/854523696be0bcb6b13171a48c9d6c2f5797f6d8dc13148e283808ac311d9f07?apiKey=7140b2a48e3c426db445770d612727cc&" class="input-icon" alt="" />
+                  <input type="email" id="emailInput" placeholder="Enter email" class="input-placeholder" aria-label="Enter email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="passwordInput" class="group-label">Password</label>
+                <div class="input-wrapper">
+                  <div style="display: flex; gap: 8px;">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f99b440eb3a3f314ceb1484a13e630f4ab4cf265de01843c4592853e2c96a385?apiKey=7140b2a48e3c426db445770d612727cc&" class="input-icon" alt="" />
+                    <input type="password" id="passwordInput" placeholder="Enter password" class="input-placeholder" aria-label="Enter password" />
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/95bffbe1acd7a876e877b60fd9bc9b96af9f8eb98d7474c8c1558c943550a9a0?apiKey=7140b2a48e3c426db445770d612727cc&" class="input-icon" alt="" />
+                </div>
+              </div>
+              <a href="#" class="forgot-password">Forgot password?</a>
+              <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+            <p class="or-continue-text">OR CONTINUE WITH</p>
+            <div class="social-icons">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e33813b89a2cddb7071620dcd0f2cfa4d6eb558fed63b3e06ee9ad2b9cbbca1?apiKey=7140b2a48e3c426db445770d612727cc&" class="social-icon" alt="Social icon 1" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/556549cbef42a2d7ea65ca111c6d0abe2f8d937accf69521be5277a3ea5262d7?apiKey=7140b2a48e3c426db445770d612727cc&" class="social-icon" alt="Social icon 2" />
+            </div>
+            <div class="sign-up-container">
+              <p class="sign-up-text">Don't have an account?</p>
+              <a href="#" class="sign-up-link">Sign up</a>
+            </div>
+          </div>
+        </div>
+    
+</body>
+</html>

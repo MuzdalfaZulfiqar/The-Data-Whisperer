@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Status</title>
+
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('go-to-menu').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+      });
+      </script> 
+
+
+</head>
+<body>
+    <style>
+        .subscription-container {
+          border-radius: 2px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: #daf0cc;
+          display: flex;
+          max-width: 425px;
+          flex-direction: column;
+          font-size: 20px;
+          font-weight: 400;
+          text-align: center;
+          justify-content: center;
+        }
+      
+        .subscription-content {
+          border-radius: 300px;
+          background-color: #daf0cc;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding: 36px 19px;
+        }
+      
+        .subscription-image {
+          aspect-ratio: 1.27;
+          object-fit: auto;
+          object-position: center;
+          width: 219px;
+          max-width: 100%;
+        }
+      
+        .subscription-message {
+          color: #c12126;
+          font-family: Epilogue, sans-serif;
+          line-height: 41px;
+          align-self: stretch;
+          margin-top: 77px;
+        }
+      
+        .subscribe-button {
+          border-radius: 8px;
+          box-shadow: 0px 0px 2px 0px rgba(23, 26, 31, 0.12), 0px 0px 1px 0px rgba(23, 26, 31, 0.07);
+          background-color: #284088;
+          display: flex;
+          margin-top: 61px;
+          gap: 16px;
+          color: #fff;
+          line-height: 100%;
+          padding: 18px 36px;
+          cursor: pointer;
+        }
+      
+        .subscribe-icon {
+          aspect-ratio: 1.03;
+          object-fit: auto;
+          object-position: center;
+          width: 40px;
+          border-radius: 20px;
+        }
+      
+        .subscribe-text {
+          font-family: Inter, sans-serif;
+          flex-grow: 1;
+          flex-basis: auto;
+          margin: auto 0;
+        }
+      
+        .back-menu {
+          color: #197dca;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 48px;
+          font: 12px/167% Inter, sans-serif;
+        }
+      </style>
+      
+      <section class="subscription-container">
+        <div class="subscription-content">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/107daed5841f9e5fd1760b58712c19680e257046bb60399e36fa4fa35ebfa6d7?apiKey=7140b2a48e3c426db445770d612727cc&" alt="" class="subscription-image" />
+          <div class="subscription-message">
+            You do not currently have an active subscription plan. To subscribe, please click the button below.
+          </div>
+          <div class="subscribe-button" tabindex="0" role="button" onclick="alert('Subscription activation button clicked!')">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef123847529764f41ed5b4489148c1ef7a3ef9756e17e26969ff4af5e0355262?apiKey=7140b2a48e3c426db445770d612727cc&" alt="" class="subscribe-icon" />
+            <div class="subscribe-text">Subscribe Now</div>
+          </div>
+          <a href="#" class="back-menu" id ="go-to-menu">Go Back to main menu -></a>
+        </div>
+      </section>
+</body>
+</html>

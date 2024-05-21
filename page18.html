@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Cancelled</title>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('go-to-menu').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+      });
+      </script>
+</head>
+<body>
+    <style>
+        .container {
+          border-radius: 2px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: #daf0cc;
+          display: flex;
+          max-width: 425px;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          padding: 68px 35px 22px;
+        }
+      
+        .image {
+          aspect-ratio: 0.9;
+          width: 221px;
+          max-width: 100%;
+          object-fit: contain;
+          fill: #fa9699;
+        }
+      
+        .title {
+          color: #284088;
+          font: 700 30px/41px Epilogue, sans-serif;
+          margin-top: 142px;
+        }
+      
+        .back-link {
+          color: #197dca;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 57px;
+          font: 400 12px/167% Inter, sans-serif;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      </style>
+      
+      <section class="container">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b11f70b9684ec897ec8a40445a08e4cc27f24e7f6aaabf8c81e5acb252dc6cd?apiKey=7140b2a48e3c426db445770d612727cc&" alt="" class="image" />
+        <h2 class="title">Subscription Cancelled Successfully</h2>
+        <a tabindex="0" class="back-link" id="go-to-menu">Go Back to main menu -&gt;</a>
+      </section>
+</body>
+</html>
